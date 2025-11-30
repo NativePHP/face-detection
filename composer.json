@@ -1,12 +1,12 @@
 {
     "name": "nativephp/sensors",
-    "description": "A NativePHP Mobile plugin",
+    "description": "Access device sensors (accelerometer, gyroscope, magnetometer, barometer) in NativePHP Mobile apps",
     "type": "nativephp-plugin",
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "you@example.com"
+            "name": "Shane Rosenthal",
+            "email": "shane@nativephp.com"
         }
     ],
     "require": {
