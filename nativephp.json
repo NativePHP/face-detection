@@ -1,0 +1,123 @@
+{
+    "name": "nativephp/sensors",
+    "version": "1.0.0",
+    "description": "Cross-platform device sensor access for NativePHP Mobile",
+    "namespace": "Sensors",
+    "bridge_functions": [
+        {
+            "name": "Sensors.Accelerometer.Start",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.AccelerometerStart",
+            "ios": "SensorsFunctions.AccelerometerStart",
+            "description": "Start accelerometer sensor updates"
+        },
+        {
+            "name": "Sensors.Accelerometer.Stop",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.AccelerometerStop",
+            "ios": "SensorsFunctions.AccelerometerStop",
+            "description": "Stop accelerometer sensor updates"
+        },
+        {
+            "name": "Sensors.Accelerometer.Read",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.AccelerometerRead",
+            "ios": "SensorsFunctions.AccelerometerRead",
+            "description": "Read current accelerometer values (x, y, z) in m/s²"
+        },
+        {
+            "name": "Sensors.Gyroscope.Start",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.GyroscopeStart",
+            "ios": "SensorsFunctions.GyroscopeStart",
+            "description": "Start gyroscope sensor updates"
+        },
+        {
+            "name": "Sensors.Gyroscope.Stop",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.GyroscopeStop",
+            "ios": "SensorsFunctions.GyroscopeStop",
+            "description": "Stop gyroscope sensor updates"
+        },
+        {
+            "name": "Sensors.Gyroscope.Read",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.GyroscopeRead",
+            "ios": "SensorsFunctions.GyroscopeRead",
+            "description": "Read current gyroscope values (x, y, z) in rad/s"
+        },
+        {
+            "name": "Sensors.Magnetometer.Start",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.MagnetometerStart",
+            "ios": "SensorsFunctions.MagnetometerStart",
+            "description": "Start magnetometer sensor updates"
+        },
+        {
+            "name": "Sensors.Magnetometer.Stop",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.MagnetometerStop",
+            "ios": "SensorsFunctions.MagnetometerStop",
+            "description": "Stop magnetometer sensor updates"
+        },
+        {
+            "name": "Sensors.Magnetometer.Read",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.MagnetometerRead",
+            "ios": "SensorsFunctions.MagnetometerRead",
+            "description": "Read current magnetometer values (x, y, z) in μT"
+        },
+        {
+            "name": "Sensors.DeviceMotion.Start",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.DeviceMotionStart",
+            "ios": "SensorsFunctions.DeviceMotionStart",
+            "description": "Start device motion sensor updates"
+        },
+        {
+            "name": "Sensors.DeviceMotion.Stop",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.DeviceMotionStop",
+            "ios": "SensorsFunctions.DeviceMotionStop",
+            "description": "Stop device motion sensor updates"
+        },
+        {
+            "name": "Sensors.DeviceMotion.Read",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.DeviceMotionRead",
+            "ios": "SensorsFunctions.DeviceMotionRead",
+            "description": "Read device motion data (attitude, rotation rate, gravity)"
+        },
+        {
+            "name": "Sensors.Barometer.Start",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.BarometerStart",
+            "ios": "SensorsFunctions.BarometerStart",
+            "description": "Start barometer sensor updates"
+        },
+        {
+            "name": "Sensors.Barometer.Stop",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.BarometerStop",
+            "ios": "SensorsFunctions.BarometerStop",
+            "description": "Stop barometer sensor updates"
+        },
+        {
+            "name": "Sensors.Barometer.Read",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.BarometerRead",
+            "ios": "SensorsFunctions.BarometerRead",
+            "description": "Read barometric pressure and relative altitude"
+        },
+        {
+            "name": "Sensors.IsAvailable",
+            "android": "com.nativephp.plugin.sensors.SensorsFunctions.IsAvailable",
+            "ios": "SensorsFunctions.IsAvailable",
+            "description": "Check which sensors are available on this device"
+        }
+    ],
+    "permissions": {
+        "android": [
+            "android.permission.BODY_SENSORS",
+            "android.permission.ACTIVITY_RECOGNITION"
+        ],
+        "ios": {
+            "NSMotionUsageDescription": "This app uses motion sensors to detect device movement and orientation"
+        }
+    },
+    "dependencies": {
+        "android": {
+            "implementation": []
+        },
+        "ios": {
+            "swift_packages": []
+        }
+    },
+    "events": [],
+    "service_provider": "Nativephp\\Sensors\\SensorsServiceProvider"
+}

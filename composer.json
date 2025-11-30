@@ -1,0 +1,31 @@
+{
+    "name": "nativephp/sensors",
+    "description": "A NativePHP Mobile plugin",
+    "type": "nativephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "you@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "nativephp/mobile": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nativephp\\Sensors\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nativephp\\Sensors\\SensorsServiceProvider"
+            ]
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    }
+}
